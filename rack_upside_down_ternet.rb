@@ -4,7 +4,7 @@ require 'nokogiri'
 module Rack
   class UpsideDownTernet
     
-    def initialize(app, effect)
+    def initialize(app, effect = '-flip')
       @app, @effect = app, effect
     end
     
